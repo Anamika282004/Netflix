@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+.wrapper{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(IMAGES/NETFLIX-BCK.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 200;
+}
+nav button:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+.btnlang{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+}
+.header-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%) ;
+        text-align: center;
+}
+.header-text h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600px;
+}
+.header-text h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.sign-up{
+    margin-top: 20px;
+      
+}
+.email{
+    width: 400px;
+    height: 50px;
+    padding: 30px;
+    background: transparent;
+    color: white;
+    outline:0;
+    border:1px solid grey;
+    border-radius: 5px;
+}
+.sign-up button{
+    background-color: red;
+    border: 0;
+    outline: 0;
+    padding: 17px;
+    margin-left:  7px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.sign-up button:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+.card1{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 600px;
+}
+.content1{
+    display: flex;
+    position: relative;
+}
+.text-description{
+   position: relative;
+   top:200px;
+   left:100px;
+}
+.text-description h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+.text-description h3{
+    font-size: 25px;
+    display: flex;
+    font-weight: 200;
+}
+.videodiv{
+    position: relative;
+   top: -500px;
+   left: 90px;
+}
+.img-right{
+    position: relative;
+    left: 100px;
+}
+.part2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 600px;
+}
+.content2{
+    display: flex;
+    justify-content: space-around;
+}
+.content2 .img-left{
+    position: relative;
+    top:100px;
+}
+.content2 .text-left{
+    position: relative;
+    top:150px;
+}
+.text-left h1{
+    font-weight: 1000;
+    font-size: 45px;
+}
+.text-left h3{
+    font-size: 25px;
+}
+.part3{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 600px;
+}
+.content3{
+    display: flex;
+}
+.content3 .img-left{
+         position: relative;
+         left: 330px;
+}
+.content3 .text-right{
+    position: relative;
+    top:250px;
+    left:150px;
+    line-height: -4px;
+}
+.text-right h1{
+    font-size: 40px;
+    font-weight: 1000;
+}
+hr{
+    background-color: grey;
+    height: 8px;
+}
+.text-right h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+.part3 .img-left{
+    display: flex;
+    position: relative;
+    top:100px;
+}
+.img-left .movie{
+    position: relative;
+    left: -500px;
+}
+.part4{
+   background-color: black;
+   height: 600px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.part4 .image-container{
+    position: relative;
+    top:50px;
+}
+.part4 .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.text-container h1{
+    font-size: 40px;
+    font-weight: 1000;
+}
+.text-container h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+.faq-container{
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+}
+.heading h1{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 45px;
+    padding-top: 20px;
+}
+.faq-questions{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: grey;
+    margin-bottom: 2px;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: trasform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ,padding 0.5s;
+}
+.accordian input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+
+}
+#ready{
+    font-size: 20px;
+    text-align: center;
+}
+.form-sign{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form-sign .email{
+    background: transparent;
+    padding: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.form-sign .started{
+    background-color: red;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    padding: 35px;
+}
+.footer .connect{
+    display: flex;
+    flex-direction: column;
+    color:grey;
+    margin-left: 170px;
+}
+.footer .items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.footer .items ul li{
+    list-style: none;
+    text-decoration: underline;
+    color:grey;
+}
+.item1 ,.item2,.item3{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.eng-btn{
+    margin-left: 170px;
+    margin-top: 30px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.net_btm{
+    margin-left: 168px;
+    margin-top: 20px;
+    color:grey;
+    font-size: 15px;
+}
